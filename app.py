@@ -56,7 +56,7 @@ def uploadImages(key):
     if imgs:
         return imgs
     
-    img = cv2.cvtColor(preProcessImg(cv2.imread('sample.jpg')),cv2.COLOR_BGR2RGB)
+    img = cv2.cvtColor(preProcessImg(cv2.imread('sample.png')),cv2.COLOR_BGR2RGB)
     size = img.shape[1] - 1
     return [
         img[:,:int(1/2*size),:],
